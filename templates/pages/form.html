@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block base %}
+<form method="POST" id="formulario" class="container">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Enviar</button>
+</form>
+{% endblock  %}
